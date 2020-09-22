@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.content{
+    height: 100vh;
+    position: relative;
+    background-color: #004679;
+}
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-evenly;
+    padding-right: 10%;
+    
+}
+.nav li{
+    list-style: none;
+}
+.nav li a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    flex: 1;
+    padding-left: 10%;
+    color: white;
+    font-size: 35px;
+}
+.sec{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+}
+.sec .text{
+    width: 600px;
+}
+.sec .text h1{
+    color: white;
+    line-height: 120px;
+    font-size: 4rem;
+}
+.sec .text h1 span{
+    font-size: 10rem;
+}
+.sec .text p{
+    color: white;
+    margin: 0;
+}
+.sec .imag{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+}
+.indictor{
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+.indictor li{
+    list-style: none;
+}
+.indictor li img{
+    height: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.indictor li img:hover{
+    transform: translateY(-20px);
+}

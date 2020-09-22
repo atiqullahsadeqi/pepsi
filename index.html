@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="logo">
+                <h2>Pepsi</h2>
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Products</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </header>
+    
+        <div class="sec">
+            <div class="text">
+                <h1>Enjoy With Us <br><span>Like</span></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quas accusantium dignissimos delectus tenetur odio qui
+                 doloremque asperiores eligendi consequatur harum explicabo incidunt molestias ipsa, laboriosam et totam quam. Voluptates?</p>
+
+            </div>
+            <div class="imag">
+                <img id="image" src="pep1.png" alt="">
+            </div>
+            
+        </div>
+        <div class="indictor">
+            <li>
+                <img id="pep1" src="pep1.png" alt="" >
+            </li>
+            <li>
+                <img id="pep2" src="pep2.png" alt="" >
+            </li>
+            <li>
+                <img id="pep3" src="pep3.png" alt="" >
+            </li>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            var img = $("#pep2").attr("src");
+            $("#pep1").click(function(){
+                $("#image").attr("src" , "pep1.png").fadeIn();
+                $(".content").css({"background-color":"#004679","transition": "0.5s"});
+            });
+            $("#pep2").click(function(){
+                $("#image").attr("src" , "pep2.png").fadeIn();
+                $(".content").css( {"background-color":"#A9A9AD","transition": "0.5s"});
+                
+            });
+            $("#pep3").click(function(){
+                $("#image").attr("src" , "pep3.png").fadeIn();
+                $(".content").css( {"background-color":"#202326","transition": "0.5s"});
+            });
+
+           
+        });
+    </script>
+</body>
+</html>
